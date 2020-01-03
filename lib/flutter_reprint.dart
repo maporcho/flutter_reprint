@@ -10,7 +10,6 @@ class FlutterReprint {
   /// Starts biometrics authentication.
   ///
   /// Returns the [AuthenticationResult]
-  @override
   static Future<AuthenticationResult> authenticateWithBiometrics() async {
     try {
       bool result =
@@ -47,7 +46,6 @@ class FlutterReprint {
   ///
   /// Returns true if the authentication was stopped successfully, false otherwise.
   ///
-  @override
   static Future<bool> stopAuthentication() async {
     return await _channel.invokeMethod<bool>('cancelAuthentication');
   }
@@ -55,7 +53,6 @@ class FlutterReprint {
   /// Checks if the device supports fingerprint authentication.
   ///
   /// Returns true if the device supports fingerprint authentication, false if it doesn't.
-  @override
   static Future<bool> get canCheckFingerprint async =>
       (await _channel.invokeMethod<bool>('isFingerprintHardwareAvailable'));
 
