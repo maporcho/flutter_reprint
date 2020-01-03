@@ -1,6 +1,5 @@
 name: flutter_reprint
-description:
-A plugin to use Reprint in Flutter apps. Reprint is a fingerprint authentication library for Android that supports older devices (for example, Samsung S5 and Xiaomi Redmi 3).
+description: A plugin to use Reprint in Flutter apps. Reprint is a fingerprint authentication library for Android that supports older devices (for example, Samsung S5 and Xiaomi Redmi 3).
 version: 1.0.1
 homepage: https://github.com/maporcho/flutter_reprint
 
