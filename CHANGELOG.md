@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Fixing iOS building (project that use flutter_reprint would miss this plugin podspec when trying to compile it in XCode)
+
 ## 1.0.1
 
 - Minor code changes
