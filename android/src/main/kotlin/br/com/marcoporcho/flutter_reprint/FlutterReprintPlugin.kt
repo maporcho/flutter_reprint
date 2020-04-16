@@ -26,7 +26,6 @@ class FlutterReprintPlugin: FlutterPlugin, MethodCallHandler {
     fun registerWith(registrar: Registrar) {
       val channel = MethodChannel(registrar.messenger(), "flutter_reprint")
       channel.setMethodCallHandler(FlutterReprintPlugin())
-      Reprint.initialize(registrar.activity())
     }
   }
 
