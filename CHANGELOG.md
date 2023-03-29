@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4
+
+- Update Flutter components and libs like gradle and kotlin plugins
+
 ## 1.0.3
 
 - Removing initialization (must be done in the android code of the project this plugin is used)

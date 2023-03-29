@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_reprint/flutter_reprint.dart';
 
@@ -18,8 +18,8 @@ class _MyAppState extends State<MyApp> {
 
   TextStyle authMessageStyle,
       regularAuthMessageStyle = TextStyle(
-    color: Colors.indigoAccent,
-  );
+        color: Colors.indigoAccent,
+      );
 
   TextStyle errorAuthMessageStyle = TextStyle(
     color: Colors.red,
@@ -77,7 +77,7 @@ class _MyAppState extends State<MyApp> {
                   child: Text(
                       'Fingerprint reader available: $_fingerprintReaderAvailable\n'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   child: Text(
                     'Authenticate',
                   ),
@@ -94,7 +94,7 @@ class _MyAppState extends State<MyApp> {
                     });
                   },
                 ),
-                RaisedButton(
+                ElevatedButton(
                     child: Text(
                       'Stop authentication',
                     ),
